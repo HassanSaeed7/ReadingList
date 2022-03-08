@@ -9,7 +9,7 @@
 
 .heading {
     text-transform: uppercase;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(1rem, 3.5vw, 3rem);
     margin: 30px 0;
     color: white;
     z-index: 1;
@@ -18,7 +18,7 @@
 
 .input {
     display: flex;
-    width: 90%;
+    width: 95%;
     position: relative;
     align-items: center;
 }
@@ -60,10 +60,70 @@
     box-shadow: 0 0 5px black;
 }
 
+.container {
+    display: flex;
+    width: 95%;
+    margin-top: 2%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+.todos {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(50, 195, 205);
+    width: 47.5%;
+}
+.icon:hover {
+    cursor: pointer;
+}
+.cards {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: #fff;
+    transition: 0.2s ease;
+}
+.cards:hover {
+    box-shadow: 0 0 5px black;
+    transform: scale(1.02);
+}
+.cardstext {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 1.5rem;
+}
+.todos_heading {
+    color: white;
+    font-size: 2rem;
+}
+.remove {
+    background-color: rgb(235, 103, 80);
+}
+
+@media (max-width: 1200px) {
+    .todos {
+        width: 45%;
+    }
+}
 
 @media (max-width: 768px) {
     .heading {
         margin: 15px 0;
+    }
+    .input {
+        width: 95%;
+    }
+    .todos {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .container {
+        width: 95%;
+        flex-direction: column;
     }
 }
