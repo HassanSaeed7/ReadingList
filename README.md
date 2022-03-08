@@ -1,3 +1,0 @@
-# ReadingList
-
-learning typescript 
